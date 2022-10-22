@@ -9,7 +9,20 @@ app.use(express.json());
 
 app.use(express.static(path.join('client', 'dist')));
 
-const PORT = process.env.POR || 5000;
+app.get('/hello',(req, res)=>{
+  
+  return res.json({
+    message : "Hello World",
+    skills : 
+    {
+      languages :[C, Cpp, Java, Javascript, Python],
+      databases :[MySql, MongoDB]
+    }
+  })
+
+})
+
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
