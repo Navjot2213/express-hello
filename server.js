@@ -15,7 +15,7 @@ app.get('/hello',(req, res)=>{
     message : "Hello World",
     skills : 
     {
-      languages :[C, Cpp, Java, Javascript, Python],
+      languages :[C, Cpp, Java, Javascript, nodejs],
       databases :[MySql, MongoDB]
     }
   })
