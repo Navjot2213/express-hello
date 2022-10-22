@@ -9,13 +9,14 @@ app.use(express.json());
 
 app.use(express.static(path.join('client', 'dist')));
 
-app.get('/hello',(req, res)=>{
+app.get('/hello', (req, res)=>{
   
   return res.json({
     message : "Hello World",
     skills : 
     {
       languages :[C, Cpp, Java, Javascript, nodejs],
+      stack :[MERN],
       databases :[MySql, MongoDB]
     }
   })
